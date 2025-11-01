@@ -1,0 +1,97 @@
+\\task 1
+int main() {
+    int a, b;
+    cout << "Birinci ededi daxil edin: ";
+    cin >> a;
+    cout << "İkinci ededi daxil edin: ";
+    cin >> b;
+    if (a > b) {
+        cout << "Boyuk eded= " << a << endl;
+    } else if (b > a) {
+        cout << "Boyuk eded= " << b << endl;
+    } else {
+        cout << "ededlər beraberdir: " << a << endl;
+    }
+   return 0;
+}
+\\task 2
+int main() {
+    int eded;
+    cout << "Eded daxil edin: ";
+    cin >> eded;
+    if (eded > 0) {
+        cout << "Eded musbetdir." << endl;
+    } else if (eded < 0) {
+        cout << "Eded menfidir." << endl;
+    } else {
+        cout << "Eded sifirdir." << endl;
+    }
+    return 0;
+}
+\\task 3
+int main() {
+    int a, b, c;
+    cout << "Birinci ededi daxil edin: ";
+    cin >> a;
+    cout << "Ikinci ededi daxil edin: ";
+    cin >> b;
+    cout << "Ucuncu ededi daxil edin: ";
+    cin >> c;
+    if (a >= b && a >= c) {
+        cout << "En boyuk eded: " << a << endl;
+    } else if (b >= a && b >= c) {
+        cout << "En boyuk eded: " << b << endl;
+    } else {
+        cout << "En boyuk eded: " << c << endl;
+    }
+    return 0;
+}
+\\task 4
+int main() {
+    int eded;
+    cout << "Eded daxil edin: ";
+    cin >> eded;
+    if (eded % 2 == 0) {
+        cout << "Eded cutdur." << endl;
+    } else {
+        cout << "Eded tekdir." << endl;
+    }
+    return 0;
+}
+\\task 5
+int main() {
+    int bal;
+    cout<<"balinizi daxil edin=";
+    cin>>bal;
+    if((bal>0)&&(bal<50)){
+        cout<<"F";
+    }else if((bal>51)&&(bal<60)){
+        cout<<"E";
+    }else if((bal>61)&&(bal<70)){
+        cout<<"D";
+    }else if((bal>71)&&(bal<80)){
+        cout<<"C";
+    }else if((bal>81)&&(bal<90)){
+        cout<<"B";
+    }else{
+        cout<<"A";
+    }
+    return 0;
+}
+\\task 6
+int main() {
+    int ay;
+    cout << "Ay nomresini daxil edin (1-12)= ";
+    cin >> ay;
+    if (ay == 12 || ay == 1 || ay == 2) {
+        cout << "Fesl qis" << endl;
+    } else if (ay >= 3 && ay <= 5) {
+        cout << "Fesl yaz" << endl;
+    } else if (ay >= 6 && ay <= 8) {
+        cout << "Fesl yay" << endl;
+    } else {
+        cout << "Fesil payiz" << endl;
+    }
+
+    return 0;
+}
