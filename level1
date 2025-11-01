@@ -1,0 +1,116 @@
+\\task 1
+using namespace std;
+int main() {
+   string ad;
+   cout<<"ad daxil edin=";
+   cin>>ad;
+   cout<<"salam "<<ad;
+    return 0;
+}
+\\task 2
+int main() {
+    int cem, hasil, bolme, ferq;
+    int x, y;
+    cout << "reqem daxil edin 1: ";
+    cin >> x;
+    cout << "reqem daxil edin 2: ";
+    cin >> y;
+    cem = x + y;
+    cout << "cem = " << cem << endl;
+    hasil = x * y;
+    cout << "hasil = " << hasil << endl;
+    bolme = x / y;
+    cout << "bolme = " << bolme << endl;
+    ferq = x - y;
+    cout << "ferq = " << ferq << endl;
+
+    return 0;
+}
+\\task 3
+int main() {
+    int kub, kvadrat;
+    int x;
+    cout << "reqem daxil edin = ";
+    cin >> x;
+    kub = x * x * x;
+    cout << "kub = " << kub << endl;
+    kvadrat = x * x;
+    cout << "kvadrat = " << kvadrat << endl;
+    return 0;
+}
+\\task 4
+int main() {
+    int sahe, uzunluq;
+    int r;
+    int p = 3;
+    cout << "radius daxil edin = ";
+    cin >> r;
+    sahe = r * r * p;
+    cout << "sahe = " << sahe << endl;
+    uzunluq = 2 * r * p;
+    cout << "uzunluq = " << uzunluq << endl;
+   return 0;
+}
+\\task 5
+int main() {
+    cout << "selsi daxil edin: ";
+    int F;
+    cin >> F;
+    cout << "farahenyt daxil edin: ";
+    int C;
+    cin >> C;
+    cout << "F + C = " << (F + C) << endl;
+    cout << "F * C + 32 = " << (F * C + 32) << endl;
+    return 0;
+}
+\\task 6
+int main() {
+    int a, b, c;
+    int ededi_orta;
+    cout << "eded daxil edin1=";
+    cin >> a;
+    cout << "eded daxil edin2=";
+    cin >> b;
+    cout << "eded daxil edin3=";
+    cin >> c;
+    ededi_orta = (a + b + c) / 3;
+    cout << "ededi orta=" << ededi_orta;
+    return 0;
+}
+\\task 7
+int main() {
+    int a, b;
+    cout << "Birinci ededi daxil edin: ";
+    cin >> a;
+    cout << "İkinci ededi daxil edin: ";
+    cin >> b;
+    a = a + b;
+    b = a - b;
+    a = a - b;
+    cout << " a = " << a << ", b = " << b << endl;
+   return 0;
+}
+\\task 8
+int main() {
+  int teref,sahe,perimetr;
+  cout<<"teref daxil edin=";
+  cin>>teref;
+  sahe=teref*teref;
+  perimetr=teref*4;
+  cout<<"sade="<<sahe<<"perimetr="<<perimetr<<endl;
+  return 0;
+}
+\\task 9
+int main() {
+    int saniye;
+    int saat, deqiqe, qaliqSaniye;
+    cout << "Saniyəni daxil edin: ";
+    cin >> saniye;
+    saat = saniye / 3600;          
+    deqiqe = (saniye % 3600) / 60; 
+    qaliqSaniye = saniye % 60;    
+    cout << saat << " saat, " 
+         << deqiqe << " dəq, " 
+         << qaliqSaniye << " saniye" << endl;
+return 0;
+}
