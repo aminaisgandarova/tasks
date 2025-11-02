@@ -1,0 +1,125 @@
+\\task 1
+int main() {
+   int n,kc=0,i;
+   cout<<"eded daxil edin=";
+   cin>>n;
+   for(i=2;i<=n;i+=2);
+   kc+=i*i;
+   cout<<"kvadratlar cemi="<<kc;
+    return 0;
+}
+\\task 2
+int main() {
+ int n;
+ cout << "Eded daxil edin=";
+ cin>>n;
+ int sayi=0,eded=n;
+ while(eded!=0){
+     eded/=10;
+     sayi++;
+ }
+ cout<<"sayi="<<sayi;
+    return 0;
+}
+\\task 3
+...
+\\task 4
+int main() {
+int cem=0;
+ cout<<"cemi 10 olan 3 reqemli ededler=";
+ for(int i=100; i<=999;i++){
+ cem=(i/100)+(i/10%10)+(i%10);
+ if (cem==10) cout<<i<<" ";
+ }
+    return 0;
+}
+\\task 5
+int main() {
+    int n;
+    cout << "Eded daxil edin: ";
+    cin >> n;
+    int sayi = 0;
+    for(int i = 1; i <= n; i++) {
+        if(n % i == 0) sayi++;
+    }
+    cout << "Tam bolenlerin sayi: " << sayi << endl;
+    return 0;
+}
+\\task 6
+...
+\\task 7
+int main() {
+    cout << "Armstrong ededler: ";
+    for(int i = 1; i <= 999; i++) {
+        int kopya= i;  
+        int sum = 0;   
+        while(kopya > 0) {
+            int reqem = kopya % 10;   
+            sum += reqem * reqem * reqem; 
+            kopya /= 10;            
+        }
+        if(sum == i) cout << i << " ";
+    }
+    return 0;
+}
+\\task 8
+...
+\\task 9
+int main() {
+    for(int i = 1; i <= 1000; i++) {
+        int t = i, rev = 0;
+        while(t > 0) {
+            rev = rev * 10 + t % 10;
+            t /= 10;
+        }
+        if(rev == i) cout << i << " ";
+    }
+}
+\\task 10
+...
+\\task 11
+int main() {
+    int a = 0, b = 1;
+    cout << "Fibonacci 1000-den kicik=";
+    while(a < 1000) {
+        cout << a << " ";
+        int c = a + b;
+        a = b;
+        b = c;
+    }
+    cout << endl;
+    return 0;
+}
+\\task 12
+int main() {
+    int n;
+    cout << "Eded daxil edin=";
+    cin >> n;
+    int sum = 0;
+    for(int i = 1; i < n; i++) {
+        if(n % i == 0) sum += i;
+    }
+    if(sum == n) cout << n << " mukemmel ededdir\n";
+    else cout << n << " mukemmel eded deyil\n";
+    return 0;
+}
+\\task 13
+...
+\\task 14
+polindrom kod
+\\task 15
+
+int main() {
+    int eded, enBoyuk;
+    cout << "Ededleri daxil edin (0 daxil etdikde dayanacaq): ";
+    cin >> eded;               
+    enBoyuk = eded;            
+    while(eded != 0) {    
+        cin >> eded;            
+     if(eded > enBoyuk) {    
+            enBoyuk = eded;
+        }
+    }
+    cout << "En boyuk eded: " << enBoyuk;
+    return 0;
+}
